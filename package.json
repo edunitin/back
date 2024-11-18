@@ -1,0 +1,35 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "dependencies": {
+        "@google-cloud/firestore": "^7.10.0",
+        "@grpc/grpc-js": "^1.12.2",
+        "axios": "^1.7.7",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.1",
+        "express-validator": "^7.2.0",
+        "firebase-admin": "^13.0.0",
+        "google-gax": "^4.4.1",
+        "jsonwebtoken": "^9.0.2",
+        "lodash": "^4.17.21",
+        "mongoose": "^5.13.22",
+        "moongose": "^1.0.0",
+        "nodemon": "^3.1.7",
+        "passport": "^0.7.0",
+        "protobufjs": "^7.4.0",
+        "react-router-dom": "^6.28.0",
+        "semver": "^7.6.3",
+        "simple-update-notifier": "^2.0.0"
+    },
+    "scripts": {
+        "start": "node Server.js"
+    },
+    "main": "admin.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

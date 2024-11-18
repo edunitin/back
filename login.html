@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        form {
+            max-width: 300px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <h2>Admin Login</h2>
+    <form>
+        <label for="google-id">Google ID</label>
+        <input type="email" id="google-id" placeholder="Enter Admin Google ID" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter Admin Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <hr>
+    <h2>User Login</h2>
+    <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter Username" required>
+        <label for="email">Google/Yahoo Account</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Set Password" required>
+        <button type="submit">Register/Login</button>
+    </form>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Nitin Sharma's Education Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light Blue Background */
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: #0066cc; /* Dark Blue */
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background: #004a99; /* Slightly Darker Blue */
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* Yellow on hover */
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .curriculum-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        /* Curriculum Box Styling */
+        .curriculum-box {
+            background: #ffffff;
+            border: 3px solid #0066cc;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .curriculum-box:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .curriculum-box h2 {
+            font-size: 1.8rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+
+        .curriculum-box a {
+            background: #0066cc;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .curriculum-box a:hover {
+            background: #004a99;
+            transform: scale(1.05);
+        }
+
+        /* Icon Styling */
+        .curriculum-box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #004a99;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+
+            .curriculum-box h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📚 Explore Our Books</h1>
+    </header>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="books.html">📚 Books</a>
+        <a href="exams.html">📝 Exams</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">📞 Contact Us</a>
+        <a href="login.html">🔑 Login</a>
+    </nav>
+    <section>
+        <h2>Choose Your Curriculum</h2>
+        <div class="curriculum-links">
+            <!-- ICSE Box -->
+            <div class="curriculum-box">
+                <img src="icse.png" alt="ICSE Icon">
+                <h2>ICSE Books</h2>
+                <a href="icse_books.html">Explore ICSE</a>
+            </div>
+            <!-- CBSE Box -->
+            <div class="curriculum-box">
+                <img src="cbse.png" alt="CBSE Icon">
+                <h2>CBSE Books</h2>
+                <a href="cbse_books.html">Explore CBSE</a>
+            </div>
+            <!-- NEET Box -->
+            <div class="curriculum-box">
+                <img src="neet.jpg" alt="NEET Icon">
+                <h2>NEET Books</h2>
+                <a href="neet_books.html">Explore NEET</a>
+            </div>
+            <!-- JEE Box -->
+            <div class="curriculum-box">
+                <img src="jee.jpg" alt="JEE Icon">
+                <h2>JEE Books</h2>
+                <a href="jee_books.html">Explore JEE</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Nitin Sharma's Education Portal | Designed for Excellence</p>
+    </footer>
+</body>
+</html>

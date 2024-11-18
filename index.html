@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitin Sharma's Educational Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1 class="logo">Nitin Sharma's Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="exams.html">Exams</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="login.html" class="btn-primary">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to a World of Learning</h1>
+            <p>Discover a treasure trove of knowledge and resources to fuel your education.</p>
+            <a href="books.html" class="btn-secondary">📖 Explore Books</a>
+        </div>
+    </section>
+
+    <!-- Books Section (Fetching Data from API) -->
+    
+
+    <!-- Footer -->
+    <footer id="contact-us" class="footer">
+        <h2>Contact Us</h2>
+        <p><strong>Nitin Sharma</strong> - Mob: 9458627703 | Email: techno00139@gmail.com</p>
+        <p>For site queries, contact:</p>
+        <p><strong>Saumik</strong> - Mob: 8979251758</p>
+        <p><strong>Devdutt</strong> - Mob: 9258826242</p>
+    </footer>
+
+    <!-- JS Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll("nav a");
+            navLinks.forEach(link => {
+                link.addEventListener("click", (event) => {
+                    const targetID = link.getAttribute("href").slice(1); // Get the target section ID
+                    const targetElement = document.getElementById(targetID);
+                    if (targetElement) {
+                        event.preventDefault();
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth",
+                        });
+                    }
+                });
+            });
+
+            // Fetch books from the backend
+            fetch('https://your-backend-url.onrender.com/api/books') // Replace with your deployed backend URL
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);  // Array of books from the backend
+                    const booksContainer = document.getElementById('book-list-container');
+                    data.forEach(book => {
+                        const listItem = document.createElement('li');
+                        listItem.textContent = `${book.title} by ${book.author}`;
+                        booksContainer.appendChild(listItem);
+                    });
+                })
+                .catch(err => console.log('Error fetching books:', err));
+        });
+    </script>
+</body>
+</html>

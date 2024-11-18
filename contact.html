@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Nitin Sharma's Education Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📞 Contact Us</h1>
+    </header>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="books.html">📚 Books</a>
+        <a href="exams.html">📝 Exams</a>
+         <a href="about.html">About Us</a>
+        <a href="contact.html">📞 Contact Us</a>
+        <a href="login.html">🔑 Login</a>
+    </nav>
+    <section class="contact-section">
+        <h2>We'd Love to Hear From You!</h2>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p><strong>Nitin Sharma</strong><br>
+                📞 Mobile: 9458627703<br>
+                📧 Email: <a href="mailto:techno00139@gmail.com">techno00139@gmail.com</a>
+            </p>
+            <p><strong>For Site Queries:</strong><br>
+                Saumik<br>
+                📞 Mobile: 8979251758<br>
+                Devdutt<br>
+                📞 Mobile: 9258826242
+            </p>
+        </div>
+        <div class="feedback-form">
+            <h3>Send Us Your Feedback</h3>
+            <form action="submit_feedback.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required placeholder="Enter your feedback"></textarea>
+                
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Nitin Sharma's Education Portal | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
